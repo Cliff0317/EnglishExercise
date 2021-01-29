@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>Listening and Speaking Exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="listeningandspeakingexstyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+	
+        <h1 class="title">Listening and Speaking Exercise</h1>
+        <hr>
+        <div class="mycontainer">
+			<div class="mywebapp"> 
+				<div class="textspeak">
+					<label>Input Text:</label>
+					<br>
+					<textarea id="text0" rows="6" autocomplete="off"></textarea>
+					<br>
+					<input onclick="speakText0()" type="button" value="Click here for listening" class="button">
+					<hr>
+				</div>
+				<div class="input">
+					<label>Result</label>
+					<br>
+                    <textarea id="textbox" rows="6"></textarea>
+                </div>         
+                <button id="start-btn" class="button" title="Start">Click here for speaking</button>
+                <button id="end-btn" class="button" title="End" disabled>Click here to end speaking</button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="listeningandspeakingexscript.js"></script>
+    </body>
+</html>
